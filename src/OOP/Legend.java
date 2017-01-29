@@ -11,8 +11,9 @@ public class Legend {
     public static void main(String[] args) {
         int kollilElusid;
 
-        int elusid = 35;
-        Zelda zelda = new Zelda(elusid);
+        int elusid = 82;
+        Zelda zelda;
+        zelda = new Zelda(elusid);
 
         kollilElusid = 25;
         zelda.kaklusKolliga(kollilElusid);
@@ -23,6 +24,7 @@ public class Legend {
         zelda.kaklusKolliga(kollilElusid);
 
         zelda.prindiKasOnElus();
+
 
     }
 }

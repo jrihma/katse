@@ -7,6 +7,27 @@ import java.util.Arrays;
  */
 public class PikadSoned {
 
-    String[] naide = {"kaalikas", "joonas", "maakera", "homeros", "mandel"}; // vastus on 3
+    public static void main(String[] args) {
+
+        String[] naide = {"kaalikas", "joonas", "maakera", "homeros", "mandel"}; // vastus on 3
+
+        double koikKarakterid = 0.0;
+        int count = 0;
+
+
+        for (int i = 0; i < naide.length; i++) {
+            koikKarakterid = koikKarakterid + naide[i].length();
+        }
+
+        for (int j = 0; j <naide.length ; j++) {
+            if (naide[j].length() > koikKarakterid / naide.length) {
+                count++;
+            }
+        }
+
+        System.out.println(count);
+
+    }
+
 
 }
